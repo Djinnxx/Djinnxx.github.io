@@ -36,7 +36,6 @@
     overflow-x: hidden;
   }
 
-  /* ── GRID BACKGROUND ── */
   body::before {
     content: '';
     position: fixed;
@@ -49,7 +48,6 @@
     z-index: 0;
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -90,7 +88,6 @@
 
   nav a:hover { color: var(--accent); }
 
-  /* ── HERO ── */
   #hero {
     min-height: 100vh;
     display: flex;
@@ -100,9 +97,7 @@
     z-index: 1;
   }
 
-  .hero-inner {
-    max-width: 900px;
-  }
+  .hero-inner { max-width: 900px; }
 
   .hero-tag {
     font-family: var(--mono);
@@ -213,7 +208,6 @@
     transform: translateY(-1px);
   }
 
-  /* ── SCAN LINE DECORATION ── */
   .scanline {
     position: absolute;
     right: 60px;
@@ -232,7 +226,6 @@
     letter-spacing: 0.05em;
   }
 
-  /* ── SECTIONS ── */
   section {
     padding: 100px 60px;
     position: relative;
@@ -257,7 +250,6 @@
     line-height: 1;
   }
 
-  /* ── ABOUT ── */
   #about { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
   .about-grid {
@@ -316,7 +308,6 @@
     letter-spacing: 0.1em;
   }
 
-  /* ── PROJECTS ── */
   #projects { background: var(--bg); }
 
   .projects-grid {
@@ -460,7 +451,6 @@
   .architecture-box .arrow { color: var(--text-dim); }
   .architecture-box .label { color: var(--text); }
 
-  /* ── SKILLS ── */
   #skills { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
   .skills-grid {
@@ -518,84 +508,9 @@
 
   @keyframes fillBar { to { transform: scaleX(1); } }
 
-  /* ── INCIDENT SECTION ── */
-  .incident-card {
-    max-width: 1100px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--danger);
-    border-radius: 4px;
-    padding: 36px;
-  }
-
-  .incident-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-
-  .incident-badge {
-    font-family: var(--mono);
-    font-size: 10px;
-    background: rgba(255,69,96,0.12);
-    color: var(--danger);
-    border: 1px solid rgba(255,69,96,0.3);
-    padding: 4px 12px;
-    border-radius: 2px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-  }
-
-  .incident-title {
-    font-family: var(--display);
-    font-size: 28px;
-    color: var(--text-bright);
-    letter-spacing: 0.03em;
-  }
-
-  .incident-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-    margin-top: 24px;
-  }
-
-  .incident-step {
-    font-size: 14px;
-  }
-
-  .step-num {
-    font-family: var(--mono);
-    font-size: 32px;
-    color: var(--danger);
-    opacity: 0.3;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .step-title {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--text-bright);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-
-  .step-desc {
-    color: var(--text);
-    font-size: 13px;
-    line-height: 1.6;
-  }
-
-  /* ── CONTACT ── */
   #contact { background: var(--bg); }
 
-  .contact-inner {
-    max-width: 700px;
-  }
+  .contact-inner { max-width: 700px; }
 
   .contact-intro {
     font-size: 15px;
@@ -649,7 +564,6 @@
     color: var(--text-bright);
   }
 
-  /* ── FOOTER ── */
   footer {
     padding: 32px 60px;
     border-top: 1px solid var(--border);
@@ -663,7 +577,6 @@
     z-index: 1;
   }
 
-  /* ── STATUS BAR ── */
   .status-bar {
     position: fixed;
     bottom: 0; left: 0; right: 0;
@@ -683,7 +596,6 @@
   .status-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); animation: pulse 2s infinite; }
   .status-dot.blue { background: var(--accent2); }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     nav { padding: 16px 24px; }
     nav ul { gap: 20px; }
@@ -697,7 +609,6 @@
     .status-bar { padding: 6px 24px; flex-wrap: wrap; gap: 16px; }
   }
 
-  /* ── SCROLL ANIMATIONS ── */
   .fade-up {
     opacity: 0;
     transform: translateY(24px);
@@ -712,7 +623,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo"><span>~/</span>kevin-becker</div>
   <ul>
@@ -723,7 +633,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-tag">IT-Security · SOC · Network Defense</div>
@@ -738,7 +647,6 @@
       <a href="#contact" class="btn btn-outline">Kontakt aufnehmen</a>
     </div>
   </div>
-
   <div class="scanline">
     <span>SYN_FLOOD......BLOCKED</span>
     <span>PORTSCAN.......BLOCKED</span>
@@ -749,7 +657,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="section-label">// 01 about</div>
   <div class="section-title">Wer ich bin</div>
@@ -799,14 +706,11 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="section-label">// 02 projekte</div>
   <div class="section-title">Was ich gebaut habe</div>
-
   <div class="projects-grid">
 
-    <!-- FEATURED: NIPS -->
     <div class="project-card featured fade-up">
       <div>
         <div class="project-type"><span class="dot"></span>Abschlussprojekt · IHK Koblenz 2026</div>
@@ -886,7 +790,6 @@
       </div>
     </div>
 
-    <!-- INCIDENT REPORT -->
     <div class="project-card fade-up" style="border-left: 3px solid var(--danger);">
       <div class="project-type" style="color:var(--danger);">
         <span class="dot" style="background:var(--danger);"></span>Real-World Analyse · 2026
@@ -920,7 +823,6 @@
       </div>
     </div>
 
-    <!-- THM -->
     <div class="project-card fade-up">
       <div class="project-type">
         <span class="dot" style="background:var(--accent2);"></span>Laufend · TryHackMe
@@ -946,11 +848,9 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="section-label">// 03 skills</div>
   <div class="section-title">Tech Stack</div>
-
   <div class="skills-grid fade-up">
     <div class="skill-group">
       <div class="skill-group-title">Security & Network</div>
@@ -960,7 +860,6 @@
       <div class="skill-item"><span class="skill-name">TCP/IP</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
       <div class="skill-item"><span class="skill-name">Firewall-Mgmt</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
     </div>
-
     <div class="skill-group">
       <div class="skill-group-title">Development & Tools</div>
       <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
@@ -969,7 +868,6 @@
       <div class="skill-item"><span class="skill-name">scikit-learn</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
       <div class="skill-item"><span class="skill-name">Linux / Parrot OS</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
     </div>
-
     <div class="skill-group">
       <div class="skill-group-title">Systeme & Infrastruktur</div>
       <div class="skill-item"><span class="skill-name">Linux Server</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
@@ -982,11 +880,9 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="section-label">// 04 kontakt</div>
   <div class="section-title">Lass uns reden</div>
-
   <div class="contact-inner fade-up">
     <p class="contact-intro">
       Ich bin offen für Einstiegsstellen im SOC- und IT-Security-Umfeld.
@@ -994,34 +890,33 @@
       ML-gestützte Systeme baut und keine Angst vor echter Arbeit hat —
       meld dich.
     </p>
-
     <div class="contact-links">
-      <a href="KevinBecker1992@proton.me" class="contact-link">
+      <a href="mailto:KevinBecker1992@proton.me" class="contact-link">
         <span class="icon">✉</span>
         <div>
           <span class="link-label">E-Mail</span>
-          <span class="link-value">deine@email.de</span>
+          <span class="link-value">KevinBecker1992@proton.me</span>
         </div>
       </a>
       <a href="https://github.com/Djinnxx" target="_blank" class="contact-link">
         <span class="icon" style="font-family:monospace;font-size:16px;">GH</span>
         <div>
           <span class="link-label">GitHub</span>
-          <span class="link-value">github.com/dein-username</span>
+          <span class="link-value">github.com/Djinnxx</span>
         </div>
       </a>
       <a href="https://www.linkedin.com/in/kevin-becker-it/" target="_blank" class="contact-link">
         <span class="icon" style="font-family:monospace;font-size:14px;">LI</span>
         <div>
           <span class="link-label">LinkedIn</span>
-          <span class="link-value">linkedin.com/in/kevin-becker</span>
+          <span class="link-value">linkedin.com/in/kevin-becker-it</span>
         </div>
       </a>
       <a href="https://tryhackme.com/p/Djinnxx" target="_blank" class="contact-link">
         <span class="icon" style="font-family:monospace;font-size:14px;">TH</span>
         <div>
           <span class="link-label">TryHackMe</span>
-          <span class="link-value">tryhackme.com/p/dein-username</span>
+          <span class="link-value">tryhackme.com/p/Djinnxx</span>
         </div>
       </a>
     </div>
@@ -1041,7 +936,6 @@
 </div>
 
 <script>
-  // ── TYPING ANIMATION ──
   const phrases = [
     'nips --detect SYN_FLOOD --auto-block',
     'wireshark -i eth0 -w capture.pcap',
@@ -1073,7 +967,6 @@
   }
   type();
 
-  // ── SCROLL ANIMATIONS ──
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) e.target.classList.add('visible');
